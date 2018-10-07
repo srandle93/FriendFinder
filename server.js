@@ -5,7 +5,7 @@ var path = require("path");
 
 // Configure the Express application
 var app = express();
-var PORT = process.env.PORT;
+var PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, "./app/public")));
 
@@ -23,30 +23,5 @@ app.listen(PORT, function() {
   console.log("Friend Finder app is listening on PORT: " + PORT);
 });
 
-// const express = require("express");
-// const path = require("path");
-
-// var app = express();
-// var PORT = 3000;
-
-// app.use(express.static(path.join(__dirname, "public")));
-// app.use(express.urlencoded({ extended: true }));
-// app.use(express.json());
-
-// require("./routing/apiroutes")(app);
-// require("./routing/htmlroutes")(app);
-
-// TotalScore(function(){
-
-// });
-
-// TotalDifference(function(){
-
-// });
-
-
-// app.listen(PORT, function() {
-//   console.log("App listening on PORT: " + PORT);
-// });
 
   
