@@ -20,7 +20,7 @@ require("./app/routing/htmlroutes")(app);
 
 // Start listening on PORT
 app.listen(PORT, function() {
-  console.log("Friend Finder app is listening on PORT: " + PORT);
+  console.log("App is listening on PORT: " + PORT);
 });
 
 

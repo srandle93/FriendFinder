@@ -47,7 +47,19 @@
     <div class="container">
         <h4>Instructions: Rate each question 1 to 5 with 1 meaning stongly disagree and 5 strongly agree.</h1>
             <br>
-        <div class="input-field col s12">
+            <div id="question">
+            <div class="input-field col s12">
+                <select id="form">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option class="choices" value="1">Option 1</option>
+                  <option class="choices" value="2">Option 2</option>
+                  <option class="choices" value="3">Option 3</option>
+                  <option class="choices" value="4">Option 4</option>
+                  <option class="choices" value="5">Option 5</option>
+                </select>
+              </div>
+            </div>
+        <!-- <div class="input-field col s12">
             <h3>Question 1</h3>
             <h5>I"d rather spend all day outdoors than playing video games.</h5>
             <select id="question1">
@@ -175,9 +187,9 @@
                 <option value="4">4</option>
                 <option value="5">5 (Strongly Agree)</option>
             </select>
-        </div>
+        </div> -->
             <br>
-
+        <!-- <button type="submit" class="btn btn-primary" id ="next"style="background-color:darkolivegreen">Next</button> -->
         <button type="submit" class="btn btn-primary" id ="subBtn"style="background-color:darkolivegreen">Submit</button>
         <a href="/">
             <button type="button" class="btn btn-primary" id="homeBtn" style="background-color:darkolivegreen">Home</button>
@@ -198,7 +210,7 @@
 
     <a href="/api/friends">API Friends List</a>
 </div>
-
+<script src="../data/questions.js"></script>
 
     <script type="text/javascript">
     $(document).ready(function() {
